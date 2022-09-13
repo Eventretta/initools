@@ -1,6 +1,6 @@
 {
 	"name": "initools",
-	"url" : "https://github.com/TentaRJ",
+	"url" : "https://github.com/Eventretta/initools",
 	"license": "MIT",
 	"description": "Tools for parsing INI files in Haxe",
 	"version": "1.0",
