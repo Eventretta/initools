@@ -24,11 +24,20 @@ class INIParser
         // We change it to ['WELL','no']
         for (i in arrayP2)
         {
-            var dArray:Array<String> = i.split(' ');
+            var dArray:Array<String> = i.split('=');
             var fArray:Array<String> = [];
 
             fArray.push(dArray[0]);
             fArray.push(dArray[2]);
+
+            // Patch them so they dont end/start with a space
+            var firstItem:Array<String> = dArray[0].split('');
+            firstItem.shift();
+            fArray[0] == firstItem.join('');
+
+            var secondItem:Array<String> = dArray[0].split('');
+            secondItem.pop();
+            fArray[1] == secondItem.join('');
 
             arrayP3.push(fArray);
         }
