@@ -11,3 +11,4 @@ getFieldFromParsed(ini:Array<Array<String>>, field:String) = Gets a value from a
 # Special Thanks
 
 Thanks to ShaharMS for some stuff
+Also thank to Ian Harrigan for helping me on fixing breaking when values have spaces
